@@ -1,0 +1,518 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	color: #000;
+	text-align: center;
+	background: #000;
+}
+
+.center {
+	text-align: center;
+}
+
+/* Dont ask. Just don't delete this spacer class */
+
+.spacer {
+	clear: both;
+}
+
+
+/* These are the default link styles */
+
+a:link {
+	text-decoration: underline;
+	color: #999;
+	background: transparent;
+}
+a:hover {
+	text-decoration: underline;
+	background: transparent;
+}
+a:visited {
+	text-decoration: underline;
+	color: #999;
+	background: transparent;
+}
+a:active {
+	text-decoration: underline;
+	background: transparent;
+}
+
+
+
+
+
+/* the wrapper holds the whole thing centrally in the browser window */
+
+#wrapper {
+	margin: 0 auto;
+        padding:5px 10px 0 10px;
+	width: 900px;
+	height: 675px;
+	background: #000;
+	border: 1px solid #999;
+	color: #333;
+	text-align: left;
+
+}
+
+
+
+/* the masthead. Change the image reference to the one you want to use */
+
+
+#header {
+	margin: 6px 0px 6px 0;
+	color: ;
+	height: 90px;
+	width: 898px;
+        text-align:right;
+	background-color:#000000;
+	background-image: url(http://www.davevuono.com/dave_vuono_photography/headers/hump_sunset.png);
+    background-image height:90px;    
+        border: 1px solid #666666;
+}
+
+
+#header_menu {
+        font-family: verdana, arial, helvetica;
+        font-size:10px;
+        padding: 78px 6px 0 0;
+}
+
+#header_menu a:link {
+        text-decoration:none;
+        padding: 14px 6px 6px 6px;
+}
+
+#header_menu a:visited {
+        text-decoration:none;
+        padding: 14px 6px 6px 6px;
+}
+
+
+#header_menu a:hover {
+        color:rgb(250,255,245);
+        background-color:;
+}
+
+
+#header_menu a:active {
+        color:transparent;
+        background-color:;
+}
+
+
+/* sidebar is the left column where all the links and secondary info show up */
+
+#sidebar {
+	float: left;
+	color: #000;
+        width:140px;
+        height:458px;
+	text-align: left;
+	font: 12px 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	margin-right: 6px;
+        margin-bottom:6px;
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;
+       	background: url(http://www.davevuono.com/overlay.png);
+}
+
+
+#sidebar h3 {
+	height: 24px;
+	margin: 0;
+	color: #999;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	font: bold 12px 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	background: #333 url(http://www.davevuono.com/sidebarbutton.png);
+	padding: 6px 0 1px 5px;
+        font-weight:normal;
+}
+
+
+
+/* Sidebar-specific styles. They have set widths so you can rollover anywhere along the link line */
+
+#sidebar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 3px 0 5px 4px;
+	color: #000;
+        text-align:center;
+}
+#sidebar li {
+	border-bottom: 1px solid #6f6f6f;
+        height:18px;
+        width:130px;
+        background: #333 url(http://www.davevuono.com/hover.png)
+}
+#sidebar li a:link {
+	color: #666;
+	line-height: 170%;
+	text-decoration: none;
+	display: block;
+	width: 130px;
+        padding: 0 0 0 0;
+}
+#sidebar li a:visited {
+	color: #667654;
+	text-decoration: none;
+	line-height: 170%;
+	display: block;
+	width: 130px;
+        padding: 0 0 0 0;
+}
+#sidebar li a:hover {
+	color: #fff;
+	line-height: 170%;
+	text-decoration: none;
+	display: block;
+	width: 130px;
+        padding: 0 0 0 0;
+    background: #333 url(http://www.davevuono.com/link.png)
+}
+
+#sidebar li a:active {
+	color: #cccc99;
+	line-height: 170%;
+	text-decoration: none;
+	display: block;
+	width: 130px;
+        padding: 0 0 0 0;
+}
+
+#sidebar ul#side a.current{
+        background-color:#555;
+}
+#sidebar ul#side a.current:hover {
+        background-color:#333;
+}
+.sidebarSub {
+        background:#303030;
+}
+
+/* about_site is the holder for your introduction. This can be safely removed */
+
+#about_site {
+	float: left;
+	width: 533px;
+        height:42px;
+	margin-bottom: 10px;
+	color: #ccc;
+	text-align: left;
+	border: 1px solid #666;
+	padding: 12px 8px 8px 8px;
+	font: 11px/130% 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	line-height: 165%;
+	background: #999;
+}
+
+
+
+/* blog is the right hand column where your entries and main content appear */
+
+#mainIndex {
+	float: left;
+	width: 750px;
+        height:454px;
+	margin-bottom: 10px;
+	border: 0px solid #666;
+	padding: 0;
+	background: #333;
+}
+
+#mainFull {
+	float: left;
+	width: 548px;
+        height:458px;
+	margin-bottom: 10px;
+	border: 1px solid #666;
+	padding: 0;
+	background: #333;
+}
+
+
+#photoPageIndex {
+	float: left;
+	width: 570px;
+        height:354px;
+	color: #ccc;
+	text-align: left;
+	padding: 0;
+	font: 11px/130% 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	line-height: 165%;
+}
+
+
+/* the content style holds the two main columns together */
+
+#content {
+	margin-top: 4px;
+}
+/* the main class keeps blog content away from the edges. Could have been done with padding in the blog class, but that could cause some woes with older browsers */
+
+.main {
+	margin: 0 16px 0 8px;
+}
+
+
+/* Header definitions. h1 is hidden, and only shows when styles are off. Note, there are specific definitions for the sidebar h3 header, blog h3 header, and the blog h2 link. The blog h2 link is a clickable rollover of the entry title */
+
+h1 {
+	font-family: 'Trebuchet MS'. 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-size:  36px;
+	font-weight: bold;
+	margin: 38px 0 0 20px;
+        color:#fff;
+       
+}
+h3 {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	letter-spacing: 0.09em;
+}
+h2 {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	letter-spacing: 0.09em;
+	font-weight: bold;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+h2 a:link, h2 a:visited {
+	font-weight: bold;
+        padding-left:17px;
+	background: url(/themes/site_themes/logical_blocks/lb_new_post.gif) left no-repeat;
+	color: #cc9;
+	text-decoration: none;
+}
+h2 a:hover {
+	color: #6ff;
+}
+
+html>body .h3 {
+
+}
+#blog h3 {
+	letter-spacing: 0.09em;
+	margin-top: 9px;
+	margin-bottom: 12px;
+	font: 11px 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+
+h4 {
+	margin-bottom: 4px;
+	font: 11px 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-weight: bold;
+}
+h5 {
+	margin-bottom: 4px;
+	font: 11px 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-weight: bold;
+	line-height: 165%;
+}
+
+p {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+
+/* the nav_bottom contains the pagination */
+
+#nav_bottom {
+	margin: 0;
+	padding: 0;
+        text-align:right;
+	border: 1px solid #666;
+	background: url(http://www.davevuono.com/overlay.png);
+	color: ;
+	font-size: 9px;
+	letter-spacing: 0.09em;
+        height:80px;
+	width: 898px;
+        float:right;
+}
+
+
+
+#nav_bottom p {
+       margin: 10px 0 5px 0;
+       text-align:right;
+}
+
+
+#thumbnail {
+        height:50px;
+        width:50px;
+        float:left;
+        margin:10px;
+}
+
+
+
+
+/* the footer, containing credits, rss links etc */
+
+#footer {
+	margin: 0px 0px 0px 0px;
+	padding: 0 0 8px 0;
+        text-align:center;
+	color: rgb(63,79,74);
+	font-size: 9px;
+	letter-spacing: 0.09em;
+        border: 0px solid #666666;
+}
+
+#footer p {
+       margin: 5px 0px 0px 0px;
+}
+
+
+
+
+
+.imageEntry {
+       float:left;
+       margin:4px 10px 6px 0;
+       border: 1px solid #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For use with the acronym plugin. Creates a question mark, italic text and underline on acronyms */
+abbr, acronym {
+	border-bottom: 1px dotted #999;
+	cursor: help;
+}
+
+/* Two paragraph styles. A general one, and one specific to the footer */
+
+
+
+
+/* For use with quotes and text you need to present outside of normal format */
+
+blockquote {
+	color: #333;
+	border-left: 1px solid #333;
+	margin-left: 5px;
+	padding-left: 4px;
+	padding-right: 4px;
+	font: 11px 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	line-height: 165%;
+}
+
+/* The standard list styles. There are specific sidebar list styles later on */
+
+ul {
+	list-style-type: none;
+	margin-top: 3px;
+	margin-bottom: 2px;
+	margin-left: 0;
+	padding-left: 0;
+}
+li {
+	border-bottom: 0 solid #333;
+	padding-bottom: 2px;
+	font: 100% verdana, arial, helvetica, sans-serif;
+}
+
+/* As it says, control of multi-entry page pagination links */
+
+.paginate {
+	margin: 18px 16px 18px 8px;
+}
+
+/* date and title are added to earlier h tags for greater control of headers. Posted shows all the author, permalink and trackback stuff under each entry */
+
+.date {
+	font-size: 10px;
+}
+.title {
+	font-size: 135%;
+	font-weight: bold;
+	background: transparent;
+	color: #cc9;
+}
+.posted {
+	clear: both;
+	margin-bottom: 25px;
+	font: 10px 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	color: #666;
+	line-height: 165%;
+	padding: 3px 0 15px;
+	border-bottom: 1px dashed #666;
+}
+.posted_comments {
+	clear: both;
+	font: 10px 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	color: #999;
+	line-height: 165%;
+	padding: 3px 0 3px;
+}
+
+.postedIndex {
+	clear: both;
+	margin-bottom: 10px;
+	font: 10px 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	color: #999;
+	line-height: 165%;
+	padding: 8px 0 15px;
+}
+
+
+
+
+/* Some form styling. Not much though */
+
+
+form {
+       margin:0px;
+       padding:0px;
+}
+
+checkbox {
+border: 3px double #666;
+padding:1px;
+color: #ccc;
+font-size: 10px;
+font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+textarea {
+border: 3px double #666;
+padding:1px;
+color: #ccc;
+font-size: 10px;
+font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+input {
+border: 3px double #666;
+padding:1px;
+color: #ccc;
+font-size: 10px;
+font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+input.submit
+{
+border: 2px double #666;
+padding: 1px;
+background-color: #000;
+color: #666;
+font-size: 10px;
+font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+fieldset {padding:10px;}
