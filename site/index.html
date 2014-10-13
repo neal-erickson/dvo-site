@@ -10,38 +10,53 @@
 	<!--<script type="text/javascript" src="js/prototype.js"></script>-->
 	<!--<script type="text/javascript" src="js/scriptaculous.js?load=effects"></script>-->
 	<!--<script type="text/javascript" src="js/lightbox.js"></script> -->
+	
 
 	<!-- <link rel="stylesheet" href="/css/lightbox.css" type="text/css" media="screen"></link>  -->
 	<link href="css/site.css" rel="stylesheet" type="text/css"></link> 		
+
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <script>
+    $(function() {
+    	debugger;
+    	$("#nav-menu").tabs();
+  	});
+  	</script>
 </head> 
 <body> 
-	<div class="fixed-container">
+	<div id="content" class="fixed-container">
 		<div class="header">
 			<span class="header-title" style="float: left">Dave Vuono Photography</span>
 			<ul id="nav-menu">
 				<li>
-					<a href="#">Photography</a>
+					<a href="#tab-photography">Photography</a>
 				</li>
 				<li>
-					<a href="#">Motion</a>
+					<a href="#tab-motion">Motion</a>
 				</li>
 				<li>
-					<a href="#">Services</a>
+					<a href="#tab-services">Services</a>
 				</li>
 				<li>
-					<a href="#">Links</a>
+					<a href="#tab-links">Links</a>
 				</li>
 				<li>
-					<a href="#">Products</a>
+					<a href="#tab-products">Products</a>
 				</li>
 				<li>
-					<a href="#">Info</a>
+					<a href="#tab-info">Info</a>
 				</li>
 			</ul>
 			<div style="clear: both;"></div>
 		</div>
 		<div class="center-content">
-			
+			<div id="tab-photography">photography</div>
+			<div id="tab-motion">motion</div>
+			<div id="tab-services">services</div>
+			<div id="tab-links">links</div>
+			<div id="tab-products">links</div>
+			<div id="tab-info">info</div>
 		</div>
 		<div class="footer">
 			footer
