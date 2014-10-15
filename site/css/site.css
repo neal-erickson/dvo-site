@@ -1,5 +1,25 @@
 body {
-	
+	color: #333;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h3 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+hr {
+	/*border-top-color: #AAA;*/
+	margin: 0px;
 }
 
 /* using position fixed to get a full width container element */
@@ -37,6 +57,57 @@ body {
 	top: 0;
 	left: 50%;
 	transform: translate(-50%, 0);
+	z-index: 500;
+}
+
+#tab-content-wrapper {
+	z-index: 1000;
+	position: absolute; /* otherwise the absolutely positioned image disregards z-index */
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+#tab-content-wrapper > div {
+	display: none; /* prevents tab content from displaying initially */
+	padding: 20px;
+}
+
+#tab-content-wrapper div img.tab-background {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 1500;
+	/*display: none;*/
+}
+
+#tab-content-wrapper div h3 {
+	font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+	font-size: 28px;
+	margin: 0 auto;
+}
+
+.tab-content-left, .tab-content-right {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 2000;
+	padding: 60px;
+	color: #FFF;
+	width: 500px;
+	overflow: auto;
+}
+
+.tab-content-left {
+	left: 0;
+}
+
+.tab-content-right {
+	right: 0;
 }
 
 /* header styling */
@@ -63,7 +134,7 @@ body {
 	float: left;
 	font-family: 'Century Gothic', sans-serif;
 	font-size: 20px;
-	/*font-weight: bold;*/
+	font-weight: normal;
 }
 
 /* mav menu & link styles */
@@ -76,28 +147,8 @@ body {
 	font-size: 18px;
 }
 
-#nav-menu a {
-	text-decoration: none;
-}
-
-#nav-menu a:link {
-	color: #333;
-}
-#nav-menu a:visited {
-	color: #333;
-}
-#nav-menu a:hover {
-	color: #333;
-	text-decoration: underline;
-}
-#nav-menu a:hover {
-	color: #333;
-}
-
-/* tab content styles */
-
-#tab-content-wrapper div {
-	display: none; /* prevents tab content from displaying initially */
+#nav-menu li.ui-tabs-active a {
+	color: #0033CC;
 }
 
 /* footer styles */
