@@ -21,15 +21,16 @@ $(function() {
    		console.log('setGalleryImage index', currentImageIndex)
 
    		// manage index
-   		if(currentImageIndex > imageList.length - 1){
+   		if(currentImageIndex >= imageList.length - 1){
    			currentImageIndex = 0;
    		} else {
    			currentImageIndex++;
    		}
 
    		// set image src
-   		imageElement.attr('src', imageList[currentImageIndex]);
-   		console.log('image src', imageList[currentImageIndex])
+   		var imageUrl = imageList[currentImageIndex];
+   		imageElement.attr('src', imageUrl);
+   		console.log('image src', imageUrl)
    	}
 
    	// function to be called each time
