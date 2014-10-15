@@ -2,6 +2,8 @@ body {
 	
 }
 
+/* using position fixed to get a full width container element */
+
 .fixed-container {
 	position: fixed;
 	top: 0px;
@@ -10,20 +12,38 @@ body {
 	bottom: 0px;
 }
 
-.header {
+.header, .footer {
 	position: absolute;
-	top: 0;
 	left: 0;
 	right: 0;
-	padding: 12px 20px;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
-#nav-menu {
-	font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
-	font-variant: small-caps;
-	text-transform: lowercase;
-	color: #333;
-	font-size: 18px;
+/* primary content area */
+
+.center-content-wrapper {
+	position: absolute;
+	left: 40px;
+	right: 40px;
+	top: 50px;
+	bottom: 40px;
+	background-color: #EEE;
+	overflow: hidden;
+}
+
+#content-gallery-image {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+/* header styling */
+
+.header {
+	top: 0;
+	padding-top: 12px;
 }
 
 .header ul {
@@ -41,23 +61,60 @@ body {
 
 .header-title {
 	float: left;
-	font-family: Georgia, Serif;
+	font-family: 'Century Gothic', sans-serif;
 	font-size: 20px;
+	/*font-weight: bold;*/
 }
+
+/* mav menu & link styles */
+
+#nav-menu {
+	font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+	font-variant: small-caps;
+	text-transform: lowercase;
+	color: #333;
+	font-size: 18px;
+}
+
+#nav-menu a {
+	text-decoration: none;
+}
+
+#nav-menu a:link {
+	color: #333;
+}
+#nav-menu a:visited {
+	color: #333;
+}
+#nav-menu a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+#nav-menu a:hover {
+	color: #333;
+}
+
+/* tab content styles */
+
+#tab-content-wrapper div {
+	display: none; /* prevents tab content from displaying initially */
+}
+
+/* footer styles */
 
 .footer {
-	position: absolute;
 	bottom: 0;
-	left: 0;
-	right: 0;
 	height: 20px;
+	padding-bottom: 12px;
+	font-family: 'Lucida Sans Unicode', Helvetica, sans-serif;
+	/*font-variant: small-caps;*/
+	/*text-transform: uppercase;*/
+	color: #333;
+	font-size: 14px;
+	/*font-weight: bold;*/
 }
 
-.center-content {
-	position: absolute;
-	top: 40px;
-	left: 40px;
-	right: 40px;
-	bottom: 40px;
-	background-color: #666;
+#copyright-notice {
+	font-style: italic;
+	font-size: 13px;
 }
