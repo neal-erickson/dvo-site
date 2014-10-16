@@ -1,4 +1,6 @@
 body {
+	font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+	font-size: 13px;
 	color: #333;
 }
 
@@ -19,7 +21,16 @@ h3 {
 
 hr {
 	/*border-top-color: #AAA;*/
-	margin: 0px;
+	margin-top: 0px;
+	margin-bottom: 25px;
+}
+
+p.inset {
+	padding-left: 25px;
+}
+
+p.inset::before {
+	content: "&raquo;";
 }
 
 /* using position fixed to get a full width container element */
@@ -90,6 +101,10 @@ hr {
 	margin: 0 auto;
 }
 
+#tab-content-wrapper div a {
+	color: #BBB;
+}
+
 .tab-content-left, .tab-content-right {
 	position: absolute;
 	top: 0;
@@ -157,15 +172,8 @@ hr {
 	bottom: 0;
 	height: 20px;
 	padding-bottom: 12px;
-	font-family: 'Lucida Sans Unicode', Helvetica, sans-serif;
-	/*font-variant: small-caps;*/
-	/*text-transform: uppercase;*/
-	color: #333;
-	font-size: 14px;
-	/*font-weight: bold;*/
 }
 
 #copyright-notice {
-	font-style: italic;
-	font-size: 13px;
+	/*font-style: italic;*/
 }
