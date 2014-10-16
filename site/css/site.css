@@ -29,10 +29,6 @@ p.inset {
 	padding-left: 25px;
 }
 
-p.inset::before {
-	content: "&raquo;";
-}
-
 /* using position fixed to get a full width container element */
 
 .fixed-container {
@@ -123,6 +119,10 @@ p.inset::before {
 
 .tab-content-right {
 	right: 0;
+}
+
+div#tab-motion iframe {
+	margin-bottom: 30px;
 }
 
 /* header styling */
