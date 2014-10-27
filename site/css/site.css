@@ -65,6 +65,7 @@ p.inset {
 	left: 50%;
 	transform: translate(-50%, 0);
 	z-index: 500;
+	width: 100%; /* scale images by width */
 }
 
 #tab-content-wrapper {
@@ -88,6 +89,7 @@ p.inset {
 	right: 0px;
 	bottom: 0px;
 	z-index: 1500;
+	width: 100%; /* scale images by width */
 	/*display: none;*/
 }
 
@@ -121,6 +123,7 @@ p.inset {
 	right: 0;
 }
 
+/* trying to space out vimeo embeds */
 div#tab-motion iframe {
 	margin-bottom: 30px;
 }
