@@ -29,6 +29,12 @@ p.inset {
 	padding-left: 25px;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* using position fixed to get a full width container element */
 
 .fixed-container {
@@ -37,6 +43,19 @@ p.inset {
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
+}
+
+.full-size-child {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.centered {
+	left: 50%;
+	transform: translate(-50%, 0);	
 }
 
 .header, .footer {
@@ -77,9 +96,11 @@ p.inset {
 	bottom: 0px;
 }
 
+/* each sub-page of the site */
 #tab-content-wrapper > div {
 	display: none; /* prevents tab content from displaying initially */
 	padding: 20px;
+	background: #000;
 }
 
 #tab-content-wrapper div img.tab-background {
@@ -103,7 +124,8 @@ p.inset {
 	color: #BBB;
 }
 
-.tab-content-left, .tab-content-right {
+/* these classes control the page tab contents, depending on which one */
+.tab-content-left, .tab-content-right, .tab-content-center {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -121,6 +143,10 @@ p.inset {
 
 .tab-content-right {
 	right: 0;
+}
+
+.tab-content-center {
+	margin: 0 auto;
 }
 
 /* trying to space out vimeo embeds */
