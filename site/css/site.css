@@ -66,6 +66,11 @@ p.inset {
 	padding-right: 40px;
 }
 
+#content {
+	min-width: 800px;
+	min-height: 400px;
+}
+
 /* primary content area */
 
 .center-content-wrapper {
@@ -201,6 +206,12 @@ div#tab-motion iframe {
 	bottom: 0;
 	height: 20px;
 	padding-bottom: 12px;
+}
+
+.footer-icon {
+	height: 20px;
+	width: 20px;
+	margin-right: 3px;
 }
 
 #copyright-notice {
