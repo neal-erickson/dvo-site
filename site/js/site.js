@@ -1,8 +1,10 @@
 // This is a shortcut to "ready"
 $(function() {
 
-	// Initialize main tab
+	   // Initialize main tab
    	$("#content").tabs();
+
+      $("#photography-tabs").tabs();
 
    	// These are maintained in a separate file for ease of editing
    	var imageList = window.siteSettings.galleryImageUrls;
