@@ -40,7 +40,9 @@ $(function() {
       // slick carousel initialization:
       $('.slick-container').slick({
          arrows: true,
-         slidesToShow: 2,
-         slidesToScroll: 1
+         slidesToShow: 6,
+         slidesToScroll: 1,
+         dots: true,
+         variableWidth: true
       });
 });

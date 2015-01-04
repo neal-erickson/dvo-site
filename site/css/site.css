@@ -163,7 +163,8 @@ p.inset {
 }
 
 .tab-content-bordered {
-	border:1px solid black;
+	/*border:1px solid black;*/
+	background-color: #EEE;
 }
 
 /* trying to space out vimeo embeds */
@@ -228,4 +229,25 @@ div#tab-motion iframe {
 
 #copyright-notice {
 	font-style: italic;
+}
+
+#photography-menu {
+	list-style-type: none;
+	float: left;
+}
+
+/* slick carousel styles */
+
+.slick-container {
+	width: 600px;
+	margin: auto;
+}
+
+.slick-container img {
+	height: 35px;
+	cursor: pointer;
+}
+
+.slick-container .slick-slide > * {
+	padding: 10px;
 }
