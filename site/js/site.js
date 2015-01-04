@@ -26,7 +26,7 @@ $(function() {
    		// set image src
    		var imageUrl = imageList[currentImageIndex];
    		imageElement.attr('src', imageUrl);
-   		console.log('image src', imageUrl)
+   		//console.log('image src', imageUrl)
    	}
 
    	// function to be called each time
@@ -35,5 +35,12 @@ $(function() {
    	// do it immediately first time
    	setGalleryImage();
 
-   	// can call 'clearInterval(intervalHandle) if necessary'
+   	// note: can call 'clearInterval(intervalHandle) if necessary'
+
+      // slick carousel initialization:
+      $('.slick-container').slick({
+         arrows: true,
+         slidesToShow: 2,
+         slidesToScroll: 1
+      });
 });

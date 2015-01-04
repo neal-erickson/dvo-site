@@ -162,6 +162,10 @@ p.inset {
 	width: auto;
 }
 
+.tab-content-bordered {
+	border:1px solid black;
+}
+
 /* trying to space out vimeo embeds */
 div#tab-motion iframe {
 	margin-bottom: 30px;
