@@ -38,11 +38,11 @@ $(function() {
    	// note: can call 'clearInterval(intervalHandle) if necessary'
 
       // slick carousel initialization:
-      $('.slick-container').slick({
-         arrows: true,
-         slidesToShow: 6,
-         slidesToScroll: 1,
-         dots: true,
-         variableWidth: true
-      });
+      // $('.slick-container').slick({
+      //    arrows: true,
+      //    slidesToShow: 6,
+      //    slidesToScroll: 1,
+      //    dots: true,
+      //    variableWidth: true
+      // });
 });
