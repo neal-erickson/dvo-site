@@ -233,7 +233,19 @@ div#tab-motion iframe {
 
 #photography-menu {
 	list-style-type: none;
-	float: left;
+	/*float: left;*/
+	border: 2px solid black;
+	padding-left: 0px;
+}
+
+#photography-menu li {
+	width: 49%;
+	display: inline-block;
+	/*float: left;*/
+}
+
+#photography-menu li a:first-child{
+	float: right;
 }
 
 /* slick carousel styles */
