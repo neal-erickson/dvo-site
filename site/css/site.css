@@ -236,32 +236,27 @@ div#tab-motion iframe {
 	/*float: left;*/
 	border: 2px solid black;
 	padding-left: 0px;
+	background-color: #FFF;
+	width: 99%;
 }
 
 #photography-menu li {
-	width: 49%;
+	width: 50%;
 	display: inline-block;
-	/*float: left;*/
+	color: #000;
+	background-color: #FFF;
+	padding: 5px;
+	font-size: 16px;
+	text-transform: uppercase;
 }
 
-#photography-menu li a:first-child{
-	float: right;
+#photography-menu li.ui-tabs-active {
+	color: #FFF;
+	background-color: #000;
 }
 
-/* slick carousel styles */
-
-.slick-container {
-	width: 600px;
-	margin: auto;
-}
-
-.slick-container img {
-	height: 35px;
-	cursor: pointer;
-}
-
-.slick-container .slick-slide > * {
-	padding: 10px;
+#photography-menu li.ui-tabs-active a {
+	color: #000;
 }
 
 /* image galleries */
