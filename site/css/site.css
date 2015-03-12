@@ -234,30 +234,36 @@ div#tab-motion iframe {
 #photography-menu {
 	list-style-type: none;
 	/*float: left;*/
-	border: 2px solid black;
-	padding-left: 0px;
-	background-color: #FFF;
-	width: 99%;
+	text-align: center;
+	padding: 0;
+	margin: 0;
 }
 
 #photography-menu li {
-	width: 50%;
-	display: inline-block;
-	color: #000;
-	background-color: #FFF;
+	
+	/*float:none;*/
+	display:inline-block;
+	/*color: #000;*/
+	/*background-color: #FFF;*/
 	padding: 5px;
+	/*padding-top: 8px;*/
 	font-size: 16px;
 	text-transform: uppercase;
 }
 
-#photography-menu li.ui-tabs-active {
-	color: #FFF;
-	background-color: #000;
+#photography-menu li:first-child {
+	border-right: 1px dotted black;
 }
+
 
 #photography-menu li.ui-tabs-active a {
 	color: #000;
 }
+
+/*
+#photography-menu li.ui-tabs-active a {
+	color: #FFF;
+}*/
 
 /* image galleries */
 
