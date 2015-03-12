@@ -1,11 +1,23 @@
 // This is a shortcut to "ready"
 $(function() {
 
-	   // Initialize main tab
+    // Initialize main tab
    	$("#content").tabs();
 
-      $("#photography-tabs").tabs();
+    // Sub-tabs
+    $("#photography-tabs").tabs({
+        show: {
+            effect: 'fadeIn',
+            duration: 400
+        }
+    });
 
+    // Went with fancybox2: http://fancyapps.com/fancybox/
+    // (featherlight was also good: http://noelboss.github.io/featherlight/)
+    $(".fancybox").fancybox({
+        padding: 0
+    });
+    
    	// These are maintained in a separate file for ease of editing
    	var imageList = window.siteSettings.galleryImageUrls;
    	var imageSwapTime = window.siteSettings.gallerySwapDelay;
@@ -35,14 +47,5 @@ $(function() {
    	// do it immediately first time
    	setGalleryImage();
 
-   	// note: can call 'clearInterval(intervalHandle) if necessary'
-
-      // slick carousel initialization:
-      // $('.slick-container').slick({
-      //    arrows: true,
-      //    slidesToShow: 6,
-      //    slidesToScroll: 1,
-      //    dots: true,
-      //    variableWidth: true
-      // });
+   	// note: can call 'clearInterval(intervalHandle)' if necessary
 });
