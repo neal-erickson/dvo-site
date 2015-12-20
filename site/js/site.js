@@ -17,7 +17,7 @@ $(function() {
     $(".fancybox").fancybox({
         padding: 0
     });
-    
+
    	// These are maintained in a separate file for ease of editing
    	var imageList = window.siteSettings.galleryImageUrls;
    	var imageSwapTime = window.siteSettings.gallerySwapDelay;
@@ -48,4 +48,17 @@ $(function() {
    	setGalleryImage();
 
    	// note: can call 'clearInterval(intervalHandle)' if necessary
+
+     // Going to do some tricky stuff here with image loading:
+     // Each image is pointing to a placeholder, but has a data-src
+     // attribute that we can use to kick off ajax requests to get the content
+     var galleryImages = $('.image-gallery img');
+
+     $.each(galleryImages || [], function(index, galleryImage){
+       var imageObj = $(galleryImage); // when we ran the .each, we removed the jquery context
+       var imageUrl = imageObj.data('src');
+       imageObj.attr('src', imageUrl);
+       console.log('setting gallery image src', imageUrl);
+     });
+
 });
