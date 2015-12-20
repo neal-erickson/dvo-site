@@ -274,7 +274,9 @@ div#tab-motion iframe {
 .image-gallery a img {
     width:100%;
     height: auto;
-    margin-top: -25%;
+		/* this was intended to move the focus of the shrunken images into view, but
+		    it didn't work well and broke any with legit thumbnails */
+    /*margin-top: -25%;*/
 }
 
 .image-gallery a img.wide {
